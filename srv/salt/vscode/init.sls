@@ -6,9 +6,10 @@
   file.managed:
     - source: salt://vscode/microsoft.list
 
-/etc/skel/.config/vscode/storage.json:
-  file.managed:
-    - source: salt://vscode/storage.json
+/etc/skel/.config/vscode:
+  file.recurse:
+    - source: salt://vscode/
+    - makedirs: True
 
 install_vscode:
   pkg.installed:
