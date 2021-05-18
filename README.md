@@ -1,2 +1,2 @@
 # moduuli
-Install virtual studio code, python, pip &amp; flask
+Install virtual studio code, python, pip &amp; flask with Salt.
