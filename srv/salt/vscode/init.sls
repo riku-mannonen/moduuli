@@ -8,7 +8,7 @@
 
 /etc/skel/.config/vscode:
   file.recurse:
-    - source: salt://vscode/skeleton/
+    - source: salt://vscode/
     - makedirs: True
 
 install_vscode:
