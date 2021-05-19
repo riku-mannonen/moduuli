@@ -8,12 +8,11 @@
 
 /etc/skel/.config/vscode:
   file.recurse:
-    - source: salt://vscode/
+    - source: salt://vscode/skeleton/
     - makedirs: True
 
 install_vscode:
   pkg.installed:
     - name: code
     - refresh: True
-    - python3:
-      enabled: True
+
