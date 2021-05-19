@@ -15,4 +15,5 @@ install_vscode:
   pkg.installed:
     - name: code
     - refresh: True
-
+    - python3:
+      enabled: True
