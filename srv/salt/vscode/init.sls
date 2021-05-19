@@ -6,14 +6,18 @@
   file.managed:
     - source: salt://vscode/microsoft.list
 
-/etc/skel/.config/vscode:
-  file.recurse:
-    - source: salt://vscode/skeleton/
+/etc/skel/.config/Code/settings.json:
+  file.managed:
     - makedirs: True
+    - source: salt://vscode/settings.json
 
+/home/riku/.config/Code/User/settings.json:
+  file.managed:
+    - makedirs: True
+    - source: salt://vscode/settings.json
+    
 install_vscode:
   pkg.installed:
     - name: code
     - refresh: True
-    - python3:
-      enabled: True
+
