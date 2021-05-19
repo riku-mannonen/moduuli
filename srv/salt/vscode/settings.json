@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Remedy - Dark (Straight)",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "python.defaultInterpreterPath": "/usr/bin/python3"
+}
